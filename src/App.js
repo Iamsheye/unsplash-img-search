@@ -29,7 +29,7 @@ const App = () => {
     <div className="ui container" style={styles}>
       <SearchBar formSubmit={searchSubmit}/>
       {
-        (load === true) ? <Loading color="green"/> :
+        (load === true) ? <Loading color="#50c878"/> :
           <>
             {(image.length) ? <P>Found {image.length} images</P> : ""}
             <ImageList images={image}/>
