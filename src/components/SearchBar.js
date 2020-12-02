@@ -9,6 +9,7 @@ const SearchBar = ({ formSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     formSubmit(name);
+    document.title = `Unsplash Image Search - ${name} Image Results`;
   }
   
   return (
